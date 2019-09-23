@@ -1,0 +1,20 @@
+# 
+#
+# Author Trae Horton
+#
+# $Revision: 1.1 $
+# $Date: 2019/08/22 $
+#
+# Description : This .audit is designed to detect if CrowdStrike Falcon Client is installed
+#               
+#
+<check_type:"Windows" version:"2"> 
+<custom_item> 
+type: AUDIT_POWERSHELL 
+description: "CrowdStrike Falcon Client Install" 
+value_type: POLICY_TEXT 
+powershell_args: "$version = Get-Service -Name CSFalcon* | Select-Object -ExpandProperty name ;$status = Get-Service -Name CSFalcon* | Select-Object -ExpandProperty status ; if ($version -eq $null) {$plugin = 'CrowdStrike Not Installed'} Else {$plugin = $version + ' Service is ' + $status} ; $plugin" 
+value_data: "" 
+only_show_cmd_output: YES 
+</custom_item> 
+</check_type>

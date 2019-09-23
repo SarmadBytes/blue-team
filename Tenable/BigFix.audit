@@ -1,0 +1,20 @@
+# 
+#
+# Author Trae Horton
+#
+# $Revision: 1.1 $
+# $Date: 2019/08/22 $
+#
+# Description : This .audit is designed to detect if BigFix Client is installed
+#               
+#
+<check_type:"Windows" version:"2"> 
+<custom_item> 
+type: AUDIT_POWERSHELL 
+description: "BigFix Client Install" 
+value_type: POLICY_TEXT 
+powershell_args: "$version = Get-Service -Name 'BESClient*' | Select-Object -ExpandProperty name ;$status = Get-Service -Name 'BESClient*' | Select-Object -ExpandProperty status ; if ($version -eq $null) {$plugin = 'BigFix Not Installed'} Else {$plugin = $version + ' is ' + $status} ; $plugin" 
+value_data: "" 
+only_show_cmd_output: YES 
+</custom_item> 
+</check_type>
