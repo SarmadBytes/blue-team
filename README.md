@@ -27,7 +27,7 @@ The following list is Nessus plugins/audit files that I have developed or use on
 
 * [Metasploit](https://www.metasploit.com/) - Metasploit
 * [Nmap](https://nmap.org/) - NSE Scrips
-* [Nessus](https://www.tenable.com/downloads/nessus) - NASL.Audit Scripts
+* [Nessus](https://www.tenable.com/downloads/nessus) - NASL/Audit Scripts
 * [Python](https://www.python.org/) - language
 
 ## Authors
