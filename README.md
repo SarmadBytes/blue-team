@@ -15,13 +15,9 @@ Nessus >= 8.6.0
 Nmap >= 7.80
 ```
 
-### Nessus Audit Files
-
-The following list is Nessus plugins/audit files that I have developed or use on a regular basis.
-* detect_avecto.audit
-* detect_BigFix.audit
-* detect_CrowdStrike.audi
-* detect_Zscaler.audit
+### Categories for blue-team scripts
+* [Tenable](https://github.com/Sorsnce/blue-team/tree/master/Tenable)
+* [Cisco](https://github.com/Sorsnce/blue-team/tree/master/Cisco)
 
 ## Built With
 
