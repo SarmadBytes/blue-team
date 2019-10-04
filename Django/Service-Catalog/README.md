@@ -57,7 +57,7 @@ sudo rm Python-3.7.2.tgz
 ```
 #### Pip3
 ```
-cd pfj-appsec-software-requests
+cd blue-team
 sudo yum install python3-pip
 sudo pip3 install -r requirments.txt
 ```
