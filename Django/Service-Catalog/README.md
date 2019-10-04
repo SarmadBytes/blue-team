@@ -1,4 +1,4 @@
-# pfj-appsec-software-requests
+# Service-Catalog
 
 The AppSec Service Catelog allows you to manage your workflows within a security program.
 This application streamlines requests and allow them to be filter within the correct pipelines.
@@ -16,10 +16,7 @@ Red Hat Linux Enterprise >= 8.0.1905
 ## Quick Start
 
 ```
-git clone https://github.com/PilotFlyingJ/pfj-appsec-software-requests
-cd pfj-appsec-software-requests
-# running
-python manage.py runserver
+To-DO: Put quick start commands
 ```
 
 ## Installation
@@ -38,7 +35,7 @@ cd /opt/django/
 
 ### Clone this directory using the following commands:
 ```
-sudo git clone https://github.com/PilotFlyingJ/pfj-appsec-software-requests.git
+sudo git clone https://github.com/Sorsnce/blue-team.git
 Username for 'https://github.com':
 Password for 'https://john.doe@github.com':
 ```
