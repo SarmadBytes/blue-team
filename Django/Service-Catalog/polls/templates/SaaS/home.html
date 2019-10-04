@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+<h2>Cloud Software Request Form</h2>
+	<div class="col-md-8">
+	<br>
+	<h5><b>1)</b> Who is the primary software requestor?</h5>
+    <form method="post">
+        {% csrf_token %}
+	    {{ form_1.as_p }}
+	<h2>{{ text }}</h2>
+    </div>
+	<div class="col-md-8">
+	<br>
+	<h5><b>2)</b> What is full intended userbase?</h5>
+	    {{ form_2.as_p }}
+		<h2>{{ text2 }}</h2>
+    </div>
+	<div class="col-md-8">
+	<br>
+	<h5><b>3)</b> What is the business use case?</h5>
+	    {{ form_3.as_p }}
+     <h2>{{ text3 }}</h2>
+	 </div>
+	<div class="col-md-8">
+	<br>
+	<h5><b>4)</b> Who is the Department Director that will be accpting the risks/terms laid out by legal? Are they aware of the request?</h5>
+	{{ form_4.as_p }}
+	<h2>{{ text4 }}</h2>
+	</div>
+	<div class="col-md-8">
+	<br>
+	<h5><b>5)</b> What Strategic Pillar or Strategic Project will this software support?</h5>
+	{{ form_5.as_p }}
+	<h2>{{ text5 }}</h2>
+	</div>
+	<div class="col-md-8">
+	<br>
+	<h5><b>6)</b> Is an MSA (Master Service Agreement) available for review?</h5>
+	{{ form_6.as_p }}
+	<h2>{{ text6 }}</h2>
+	</div>
+	<div class="col-md-8">
+	<br>
+	<h5><b>7)</b> How will access to the platform be controlled?</h5>
+	{{ form_7.as_p }}
+	<h2>{{ text7 }}</h2>
+	</div>
+	<div class="col-md-8">
+	<br>
+	<h5><b>8)</b> Who will control licenses and user access, if applicable?</h5>
+	{{ form_8.as_p }}
+	<h2>{{ text8 }}</h2>
+	</div>
+	<div class="col-md-8">
+	<br>
+	<h5><b>9)</b> What data classification will reside in the cloud platform?</h5>
+	{{ form_9.as_p }}
+	<h2>{{ text9 }}</h2>
+	</div>
+	<div class="col-md-8">
+	<br>
+	<h5><b>10)</b> Name of Cloud Software that is being requested?</h5>
+	{{ form_10.as_p }}
+	<h2>{{ text10 }}</h2>
+	 <button type="submit">Submit</button>
+	 </form>
+    </div>
+{% endblock %}
+

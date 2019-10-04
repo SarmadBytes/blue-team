@@ -1,0 +1,8 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from django import forms
+
+def index(request):
+    return HttpResponse("<b>This</b> will be the SoftWare Request Form
+")
+# Create your views her
