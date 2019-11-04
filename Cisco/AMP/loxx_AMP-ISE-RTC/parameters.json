@@ -1,0 +1,15 @@
+{
+	"debug" : true,
+	"id" : "",
+	"api_key" : "",
+	"endpoint" : "api.amp.cisco.com",
+	"group_name" : "",
+	"dest_group" : "",
+	"event_name" : "Threat Quarantined",
+	"triage_event_name" : "Threat Detected",
+	"triage_dest_group" : "",
+	"host" : "ise.local.com",
+	"port" : "9060",
+	"username" : "",
+	"password" : ""
+}
