@@ -1,0 +1,9 @@
+{
+"hostname" : "securitycenter.lab.local",
+"FMCHostname" : "lab-fmc.cisco.com",
+"username" : "username",
+"password" : "password",
+"debug" : true,
+"netrange" : "10.0.0.0/8",
+"addHosts" : true
+}
