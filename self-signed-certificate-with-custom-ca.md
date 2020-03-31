@@ -66,7 +66,10 @@ openssl req -new -sha256 \
         <(printf "\n[SAN]\nsubjectAltName=DNS:mydomain.com,DNS:www.mydomain.com")) \
     -out mydomain.com.csr
 ```
-
+### Method C (One Liner)
+```bash
+sudo openssl req -new -sha256 -nodes -out phantom.csr -newkey rsa:2048 -keyout phantom.key -config phantom.csr.cnf
+```
 
 ## Verify the csr's content
 
@@ -77,7 +80,7 @@ openssl req -in mydomain.com.csr -noout -text
 ## Generate the certificate using the `mydomain` csr and key along with the CA Root key
 
 ```
-openssl x509 -req -in mydomain.com.csr -CA rootCA.crt -CAkey rootCA.key -CAcreateserial -out mydomain.com.crt -days 500 -sha256
+openssl x509 -req -in mydomain.com.csr -CA rootCA.crt -CAkey rootCA.key -CAcreateserial -out mydomain.com.crt -days 3650 -sha256 -extfile phantom.v3.ext
 ```
 
 ## Verify the certificate's content
