@@ -4,8 +4,8 @@ import sys
 import argparse
 
 parser = argparse.ArgumentParser(description='Perform Recon actions.')
-parser.add_argument('--hash', help='Looks up file hash within VirusTotal.')
-parser.add_argument('--banner', help='Shows the newest banner for Gabriel.')
+parser.add_argument('--hash', dest='hash', help='Looks up file hash within VirusTotal.')
+parser.add_argument('--banner', dest='banner', help='Shows the newest banner for Gabriel.')
 
 args = parser.parse_args()
-print(args.accumulate(args.integers))
+print(args.hash(args.banner))
