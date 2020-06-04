@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+# Author: Trae Horton
+import sys
+
+for arg in sys.argv:
+    print(arg)
