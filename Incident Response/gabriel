@@ -2,5 +2,9 @@
 # Author: Trae Horton
 import sys
 
-for arg in sys.argv:
-    print(arg)
+def banner(args):
+    banner='Gabriel'
+    print(banner)
+    
+#for arg in sys.argv:
+#    print(arg)
